@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html,
@@ -12,12 +12,16 @@ body {
 }
 
 html {
+  box-sizing: border-box;
+
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: $ff-roboto;
   color: $color-default-black;
+
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,8 +39,9 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: inherit;
   text-decoration: none;
+  outline-color: $color-default-white;
 }
 
 img,
