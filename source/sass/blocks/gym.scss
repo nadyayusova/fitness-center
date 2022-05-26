@@ -1,0 +1,246 @@
+.gym {
+  background-color: $color-default-white;
+}
+
+// высота блока пока не определена
+.gym__inner {
+  position: relative;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1365 {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  }
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding-top: 51px;
+    padding-bottom: 183px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+}
+
+.gym__text {
+  flex: 1 0 43.1%;
+  padding-left: 5.1%;
+  padding-right: 7.3%;
+  padding-top: 51px;
+
+  @include vp-1199 {
+    flex-basis: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 35px;
+  }
+
+  @include vp-767 {
+    padding-top: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+}
+
+.gym__text h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: $ff-bebas;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 7px;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
+    font-size: 32px;
+    text-align: left;
+  }
+}
+
+.gym__text h3 {
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+    text-align: left;
+  }
+}
+
+.gym__text p {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $ff-roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding-right: 30px;
+  }
+}
+
+.gym__photo {
+  flex: 1 1 660px;
+
+  @include vp-1199 {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  @include vp-767 {
+    padding-bottom: 40px;
+  }
+}
+
+.gym__photo img {
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.gym__cover {
+  position: absolute;
+  top: 408px;
+  left: 50%;
+  transform: translateX(-143px);
+  z-index: 10;
+
+  @include vp-1199 {
+    transform: translateX(-50%);
+    width: 266px;
+    top: unset;
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    transform: none;
+    width: 100%;
+  }
+}
+
+.gym__cover img {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.gym__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  padding-left: 4px;
+
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='49' stroke='url(%23paint0_linear_1_155)' stroke-opacity='0.2' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='36' fill='url(%23paint1_linear_1_155)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1_155' x1='19.774' y1='3.00672e-05' x2='105.785' y2='10.6444' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23ED0233'/%3E%3Cstop offset='1' stop-color='%23003EB7'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1_155' x1='14' y1='49.52' x2='54.1858' y2='9.18415' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23003D85'/%3E%3Cstop offset='0.885417' stop-color='%23B80027'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  border-radius: 50%;
+  z-index: 12;
+
+  @include vp-1199 {
+    width: 72px;
+    height: 72px;
+    padding-left: 2px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px $color-default-white;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px $color-torch-red;
+  }
+}
+
+.gym__button svg {
+  @include vp-1199 {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  top: 408px;
+  left: 50%;
+  transform: translateX(-143px);
+  width: 364px;
+  height: 228px;
+  z-index: 14;
+  overflow: hidden;
+
+  @include vp-1199 {
+    transform: translateX(-50%);
+    width: 266px;
+    height: 167px;
+    top: unset;
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    transform: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 52.18%;
+    overflow: hidden;
+  }
+}
+
+.gym__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}

@@ -69,3 +69,9 @@
 .hidden {
   display: none;
 }
+
+.no-tablet {
+  @include vp-1199 {
+    display: none;
+  }
+}
