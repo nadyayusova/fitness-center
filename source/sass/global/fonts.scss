@@ -7,21 +7,10 @@
   font-display: swap;
 }
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/.woff2") format("woff2"),
-//     url("../fonts/.woff") format("woff");
-// }
-
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -29,8 +18,8 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -38,8 +27,8 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
-    url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  src: url("../fonts/robotocondensed-light.woff2") format("woff2"),
+    url("../fonts/robotocondensed-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -47,8 +36,8 @@
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
-    url("../fonts/BebasNeue-Regular.woff") format("woff");
+  src: url("../fonts/bebasneue-regular.woff2") format("woff2"),
+    url("../fonts/bebasneue-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -56,8 +45,8 @@
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
-    url("../fonts/BebasNeue-Bold.woff") format("woff");
+  src: url("../fonts/bebasneue-bold.woff2") format("woff2"),
+    url("../fonts/bebasneue-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

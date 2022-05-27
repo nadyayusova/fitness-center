@@ -16,14 +16,16 @@ $color-resolution-blue:             #1c3374;
 $color-sapphire:                    #102654;
 $color-black-russian:               #030a1a;
 // средний цвет градиента
-$color-jazzberry-jam:                 #a1073f;
+$color-pompadour:                   #811243;
 
 // Gradient
 
 // фоны основного блока
 $conic-blue-red-desktop: conic-gradient(from 130.31deg at calc(50% - 464px) 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $conic-blue-red-tablet: conic-gradient(from 139.4deg at calc(50% - 225px) 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$conic-blue-red-mobile: conic-gradient(from 171.43deg at calc(100% - 207px) 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+// $conic-blue-red-mobile: conic-gradient(from 171.43deg at calc(100% - 207px) 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+//только для текста слева
+$conic-blue-red-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
 $linear-blue-red: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 

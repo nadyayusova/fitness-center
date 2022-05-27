@@ -24,45 +24,46 @@
 
         <section class="page-title">
           <div class="page-title__inner container">
-            <div>
-              <svg width="89" height="20" viewBox="0 0 89 20" role="img" focusable="false">
-                <use xlink:href="./img/sprite_auto.svg#logo"></use>
-              </svg>
-              <ul>
-                <li><a href="tel:+78005555555">8-800-555-55-55</a></li>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <h3>
-                  <span>Омск</span>
-                </h3>
-                <h2>
-                  <span>Фитнес</span>
-                  <span>центр</span>
-                </h2>
+
+            <header class="page-title__header">
+              <div class="page-title__logo">
+                <svg width="89" height="20" viewBox="0 0 89 20" role="img" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#logo"></use>
+                </svg>
+              </div>
+              <a class="page-title__phone" href="tel:+78005555555">8-800-555-55-55</a>
+            </header>
+
+            <div class="page-title__text">
+              <p>Омск</p>
+              <div class="page-title__helper">
+                <div class="page-title__caption">
+                  <h2>
+                    Фитнес<br>центр
+                  </h2>
+                </div>
+                <a class="btn btn--transparent-1" href="#subscription">Купить абонемент</a>
                 <ul>
                   <li>Тренажёрный зал</li>
                   <li>Групповые занятия</li>
                   <li>Кардио-зона</li>
                 </ul>
-                <a class="btn btn--transparent-1" href="#subscription">Купить абонемент</a>
               </div>
-              <p>
-                <picture>
-                  <!-- 1х: 500px; 2x: 1000px -->
-                  <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="./img/model-tablet.webp 1x, ./img/model-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/model-desktop.webp 1x, ./img/model-desktop@2x.webp 2x"> -->
-                  <source media="(max-width: 1199px)" srcset="./img/model-tablet.jpg 1x, ./img/model-tablet@2x.jpg 2x">
-                  <img src="./img/model-desktop.jpg" srcset="./img/model-desktop@2x.jpg 2x" width="500" height="556" alt="Образец для подражания" loading="lazy">
-                </picture>
-              </p>
-              <ul>
-                <li><a href="https://facebook.com" target="_blank">FB</a></li>
-                <li><a href="https://vk.com" target="_blank">VK</a></li>
-                <li><a href="https://instagram.com" target="_blank">IG</a></li>
-              </ul>
             </div>
+            <div class="page-title__image">
+              <picture>
+                <!-- 1х: 500px; 2x: 1000px -->
+                <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/model-tablet.webp 1x, img/model-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/model-desktop.webp 1x, img/model-desktop@2x.webp 2x"> -->
+                <source media="(max-width: 1199px)" srcset="img/model-tablet.jpg 1x, img/model-tablet@2x.jpg 2x">
+                <img src="img/model-desktop.jpg" srcset="img/model-desktop@2x.jpg 2x" width="500" height="556" alt="Образец для подражания" loading="lazy">
+              </picture>
+            </div>
+            <ul class="page-title__socials">
+              <li><a href="https://facebook.com" target="_blank">FB</a></li>
+              <li><a href="https://vk.com" target="_blank">VK</a></li>
+              <li><a href="https://instagram.com" target="_blank">IG</a></li>
+            </ul>
           </div>
         </section>
 
@@ -77,33 +78,33 @@
             <div class="gym__photo">
               <picture>
                 <!-- 1х: 660px; 2x: 1320px -->
-                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="./img/gym-mobile.webp 1x, ./img/gym-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/gym-tablet.webp 1x, ./img/gym-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/gym-desktop.webp 1x, ./img/gym-desktop@2x.webp 2x"> -->
-                <source media="(max-width: 767px)" srcset="./img/gym-mobile.jpg 1x, ./img/gym-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="./img/gym-tablet.jpg 1x, ./img/gym-tablet@2x.jpg 2x">
-                <img src="./img/gym-desktop.jpg" srcset="./img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал" loading="lazy">
+                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+                <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал" loading="lazy">
               </picture>
             </div>
             <div class="gym__cover">
               <picture>
                 <!-- 1х: 364px; 2x: 728px -->
-                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="./img/video-mobile.webp 1x, ./img/video-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x"> -->
-                <source media="(max-width: 767px)" srcset="./img/video-mobile.jpg 1x, ./img/video-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-                <img src="./img/video-desktop.jpg" srcset="./img/video-desktop@2x.jpg 2x" width="364" height="228" alt="Видеообзор тренажерного зала" loading="lazy">
+                <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img src="img/video-desktop.jpg" srcset="img/video-desktop@2x.jpg 2x" width="364" height="228" alt="Видеообзор тренажерного зала" loading="lazy">
               </picture>
               <button class="gym__button" type="button" name="play-video-btn">
                 <svg width="13" height="15" viewBox="0 0 13 15" role="img" focusable="false">
-                  <use xlink:href="./img/sprite_auto.svg#play"></use>
+                  <use xlink:href="img/sprite_auto.svg#play"></use>
                 </svg>
               </button>
             </div>
             <div class="gym__video hidden">
-              <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-              <iframe width="1280" height="720" src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </section>
@@ -158,7 +159,7 @@
         <div class="page-footer__lower container">
           <div class="page-footer__logo logo logo--footer">
             <svg class="logo__image" width="55" height="55" viewBox="0 0 55 55" role="img" focusable="false">
-              <use xlink:href="./img/sprite_auto.svg#logo"></use>
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </div>
 
@@ -168,7 +169,7 @@
             <li class="socials__item">
               <a class="socials__link" href="https://facebook.com" target="_blank">
                 <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-label="Ссылка на Фэйсбук" focusable="false">
-                  <use xlink:href="./img/sprite_auto.svg#fb"></use>
+                  <use xlink:href="img/sprite_auto.svg#fb"></use>
                 </svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
@@ -176,7 +177,7 @@
             <li class="socials__item">
               <a class="socials__link" href="https://ok.com" target="_blank">
                 <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-label="Ссылка на Одноклассники" focusable="false">
-                  <use xlink:href="./img/sprite_auto.svg#ok"></use>
+                  <use xlink:href="img/sprite_auto.svg#ok"></use>
                 </svg>
                 <span class="visually-hidden">Одноклассники</span>
               </a>
@@ -184,7 +185,7 @@
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com" target="_blank">
                 <svg width="30" height="30" viewBox="0 0 30 30" role="img" aria-label="Ссылка на Вконтакте" focusable="false">
-                  <use xlink:href="./img/sprite_auto.svg#vk"></use>
+                  <use xlink:href="img/sprite_auto.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте</span>
               </a>

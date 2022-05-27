@@ -1,7 +1,6 @@
 const playVideoBtn = document.querySelector('.gym__button');
 const coverBlock = document.querySelector('.gym__cover');
 const videoBlock = document.querySelector('.gym__video');
-const video = document.querySelector('.gym__video iframe');
 
 const onPlayButtonClick = function () {
   if (!coverBlock.classList.contains('hidden')) {
