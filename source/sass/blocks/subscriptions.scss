@@ -1,0 +1,115 @@
+$gradient-desktop: 150px;
+$gradient-tablet: 54px;
+
+.subscriptions {
+  position: relative;
+  background-color: $color-default-white;
+  background-image: url("../img/disks-desktop.png"),
+    linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-desktop, $color-ghost-white $gradient-desktop, $color-ghost-white 100%);
+  background-position: calc(50% + 629px) bottom, center bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 465px 494px, auto;
+  z-index: 2;
+
+  @include retina {
+    @media (min-width: $vp-desktop-only) {
+      background-image: url("../img/disks-desktop@2x.png"),
+        linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-desktop, $color-ghost-white $gradient-desktop, $color-ghost-white 100%);
+    }
+  }
+
+  @include vp-1365 {
+    background-position: calc(50% + calc((100vw - 1200px) / (1365 - 1200) * (629 - 600) + 600px)) bottom, center bottom;
+  }
+
+  @include vp-1199 {
+    background-position: calc(50% + 249px) 105.1%, center bottom;
+    background-image: url("../img/disks-tablet.png"),
+      linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-tablet, $color-ghost-white $gradient-tablet, $color-ghost-white 100%);
+    background-size: 423px 444px, auto;
+
+    @include retina {
+      background-image: url("../img/disks-tablet@2x.png"),
+        linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-tablet, $color-ghost-white $gradient-tablet, $color-ghost-white 100%);
+    }
+  }
+
+  @include vp-767 {
+    background-color: $color-ghost-white;
+    background-image: none;
+
+    @include retina {
+      background-image: none;
+    }
+  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   right: calc(50% - 792px);
+  //   bottom: -95px;
+  //   transform: rotate(150deg);
+  //   z-index: -1;
+  //   width: 321px;
+  //   height: 384px;
+
+  //   // outline: 1px solid black;
+  //   // outline-offset: -1px;
+  //   background-color: transparent;
+  //   background-image: url("../img/disks-desktop.png");
+  //   background-position: 0 0;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+
+  // //   // @include retina {
+  // //   //   @media (min-width: $vp-desktop-only) {
+  // //   //     background-image: url("../img/disks-desktop@2x.png");
+  // //   //   }
+  // //   // }
+  // }
+}
+
+.subscriptions__inner {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding-top: 121px;
+  padding-bottom: calc(80px + 150px);
+
+  @include vp-1365 {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  }
+
+  @include vp-1199 {
+    padding-top: 101px;
+    align-items: center;
+    padding-bottom: calc(60px + 54px);
+  }
+
+  @include vp-767 {
+    // padding: 0;
+    padding-top: 71px;
+    padding-bottom: 35px;
+  }
+}
+
+.subscriptions__inner h2 {
+  align-self: center;
+  margin: 0;
+  margin-bottom: 33px;
+  font-family: $ff-bebas;
+  font-size: 49px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 42px;
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+    font-size: 32px;
+  }
+}

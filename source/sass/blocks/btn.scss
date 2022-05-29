@@ -1,5 +1,7 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
   padding: 10px 20px;
 
@@ -24,15 +26,15 @@
   &--transparent-1 {
     background-color: $color-transparent;
     border-color: $color-default-white;
-    // outline-color: $color-default-white;
+    outline-color: $color-default-white;
   }
 
-  // &--transparent-2 {
-  //   color: $color-deep-sky-blue;
-  //   background-color: $color-transparent;
-  //   border-color: $color-deep-sky-blue;
-  //   outline-color: $color-black-pearl;
-  // }
+  &--transparent-2 {
+    color: $color-sapphire;
+    background-color: $color-transparent;
+    border-color: $color-resolution-blue;
+    // outline-color: $color-resolution-blue;
+  }
 
   &:disabled {
     opacity: 0.5;

@@ -116,9 +116,9 @@
 }
 
 .page-title__text p {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-end;
   margin: 0;
 
   font-family: $ff-bebas;
@@ -127,6 +127,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: right;
   overflow-wrap: break-word;
 
   @include vp-1199 {
@@ -166,7 +167,8 @@
   @include vp-767 {
     // grid-template-columns: 1fr 176px;
     //только для текста слева
-    grid-template-columns: 113px 1fr;
+    // max-width: 290px;
+    grid-template-columns: 113px 177px 1fr;
     grid-template-rows: 86px min-content 1fr;
   }
 }
@@ -177,15 +179,15 @@
 
   //только для текста слева
   @include vp-767 {
-    justify-self: start;
-    margin-left: 77px;
+    justify-self: end;
+    // margin-left: 77px;
   }
 }
 
 .page-title__text h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-end;
   margin: 0;
 
   font-family: $ff-bebas;
@@ -195,6 +197,7 @@
   letter-spacing: 0.02em;
   -webkit-text-stroke: 4px $color-default-white;
   text-transform: uppercase;
+  text-align: right;
   overflow-wrap: break-word;
 
   @include vp-1199 {
@@ -251,9 +254,9 @@
   justify-self: end;
   align-self: start;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   min-width: 233px;
   min-height: 61px;
   padding: 15px 20px 12px;
@@ -266,6 +269,7 @@
   }
 
   @include vp-767 {
+    grid-column: 1 / span 3;
     min-width: 100%;
     min-height: 62px;
   }
