@@ -1,0 +1,91 @@
+.trainers {
+  background-color: $color-default-white;
+}
+
+.trainers__inner {
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 103px;
+  padding-right: 103px;
+
+  @include vp-1365 {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  }
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.trainers__inner h2 {
+  margin: 0;
+  font-family: $ff-bebas;
+  font-size: 49px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.trainers__img-wrapper {
+  text-align: center;
+}
+
+.trainers__img-wrapper img {
+  width: 100%;
+}
+
+.trainers__swiper-prev-btn,
+.trainers__swiper-next-btn {
+  position: absolute;
+  top: 50%;
+  // width: 20px;
+  // height: 36px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.trainers__swiper-prev-btn {
+  left: 20px;
+}
+
+.trainers__swiper-next-btn {
+  right: 20px;
+}
+
+.trainers__swiper-prev-btn svg,
+.trainers__swiper-next-btn svg {
+  fill: none;
+  stroke: $color-grey-light;
+
+  &:hover,
+  &:focus {
+    stroke: $color-grey;
+  }
+
+  &:active {
+    stroke: $color-default-black;
+  }
+}
