@@ -9,16 +9,19 @@ const trainersSwiper = new Swiper('.swiper', {
   },
   loop: true,
   // watchOverflow: true,
-  spaceBetween: 40,
+  // spaceBetween: 40,
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
-    768: {
+    767: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
-    1200: {
+    1199: {
       slidesPerView: 4,
+      spaceBetween: 40,
     },
   },
 });

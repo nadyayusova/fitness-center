@@ -7,25 +7,20 @@
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 103px;
-  padding-right: 103px;
-
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
+  padding: 41px 103px 80px;
 
   @include vp-1199 {
-    padding: 0 45px;
+    padding: 21px 101px 80px;
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 30px 47px 80px;
   }
 }
 
 .trainers__inner h2 {
   margin: 0;
+  margin-bottom: 49px;
   font-family: $ff-bebas;
   font-size: 49px;
   line-height: 100%;
@@ -33,10 +28,13 @@
   color: $color-sapphire;
 
   @include vp-1199 {
+    margin-bottom: 39px;
     font-size: 42px;
+    text-align: center;
   }
 
   @include vp-767 {
+    margin-bottom: 42px;
     font-size: 32px;
   }
 }
@@ -48,6 +46,8 @@
 }
 
 .trainers__img-wrapper {
+  position: relative;
+  width: 100%;
   text-align: center;
 }
 
@@ -55,30 +55,126 @@
   width: 100%;
 }
 
+.trainers__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 53px 30px 15px;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  background-color: transparent;
+  overflow: hidden;
+
+  @include vp-767 {
+    padding: 43px 9px 10px;
+  }
+}
+
+.trainers__img-wrapper:hover .trainers__overlay {
+  top: 0;
+  background-color: transparentize($color: $color-sapphire, $amount: 0.11);
+}
+
+.trainers__overlay h3 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.trainers__img-wrapper:hover h3 {
+  margin-bottom: 0;
+}
+
+.trainers__overlay p {
+  display: none;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 88%;
+  color: $color-spindle;
+
+  @include vp-767 {
+    margin-bottom: 21px;
+  }
+}
+
+.trainers__img-wrapper:hover p {
+  display: block;
+}
+
+.trainers__overlay ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.trainers__img-wrapper:hover .trainers__overlay ul {
+  display: flex;
+}
+
+.trainers__overlay li {
+  margin-bottom: 13px;
+}
+
+// кнопки
+
 .trainers__swiper-prev-btn,
 .trainers__swiper-next-btn {
   position: absolute;
-  top: 50%;
-  // width: 20px;
-  // height: 36px;
+  top: calc(50% + 10px);
   padding: 2px;
   border: none;
   background-color: transparent;
   z-index: 5;
+
+  @include vp-1199 {
+    top: calc(50% - 8px);
+  }
+
+  @include vp-767 {
+    top: 50%;
+  }
 }
 
 .trainers__swiper-prev-btn {
-  left: 20px;
+  left: 44px;
+
+  @include vp-767 {
+    left: 13px;
+  }
 }
 
 .trainers__swiper-next-btn {
-  right: 20px;
+  right: 44px;
+
+  @include vp-767 {
+    right: 13px;
+  }
 }
 
 .trainers__swiper-prev-btn svg,
 .trainers__swiper-next-btn svg {
   fill: none;
   stroke: $color-grey-light;
+
+  @include vp-767 {
+    width: 12px;
+    height: 21px;
+  }
 
   &:hover,
   &:focus {
