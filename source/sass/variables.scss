@@ -22,9 +22,9 @@ $color-grey:                        #787878;
 $color-grey-light:                  #afafaf;
 $color-crimson:                     #d10a42;
 $color-spindle:                     #b6bdcc;
-
-// средний цвет градиента
+$color-gulf-blue:                   #2a3b63;
 $color-pompadour:                   #811243;
+$color-persian-blue:                #2e35ac;
 
 // Gradient
 
@@ -35,8 +35,9 @@ $conic-blue-red-tablet: conic-gradient(from 139.4deg at calc(50% - 225px) 35.74%
 //только для текста слева
 $conic-blue-red-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
-$linear-blue-red-btn: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$linear-blue-red-btn:  linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $linear-blue-red-rate: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+$linear-blue-red-text: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 // кнопка на заставке видео
 $linear-video-button: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 $linear-button-border: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);

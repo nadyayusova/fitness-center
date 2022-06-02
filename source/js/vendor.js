@@ -1,6 +1,5 @@
 // Swiper 7.4.1
 import Swiper from './vendor/swiper';
-// import './vendor/swiper-old';
 
 const trainersSwiper = new Swiper('.swiper', {
   navigation: {
@@ -9,11 +8,10 @@ const trainersSwiper = new Swiper('.swiper', {
   },
   loop: true,
   // watchOverflow: true,
-  // spaceBetween: 40,
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     767: {
       slidesPerView: 2,
