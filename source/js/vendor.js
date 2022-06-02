@@ -1,7 +1,7 @@
 // Swiper 7.4.1
 import Swiper from './vendor/swiper';
 
-const trainersSwiper = new Swiper('.swiper', {
+const trainersSwiper = new Swiper('.trainers__swiper', {
   navigation: {
     nextEl: '.trainers__swiper-next-btn',
     prevEl: '.trainers__swiper-prev-btn',
@@ -24,4 +24,14 @@ const trainersSwiper = new Swiper('.swiper', {
   },
 });
 
-export {trainersSwiper};
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  navigation: {
+    nextEl: '.reviews__swiper-next-btn',
+    prevEl: '.reviews__swiper-prev-btn',
+  },
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 80,
+});
+
+export {trainersSwiper, reviewsSwiper};

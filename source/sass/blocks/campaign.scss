@@ -4,7 +4,7 @@
 
 .campaign__inner {
   padding-top: 122px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 
   @include vp-1365 {
     padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
@@ -13,12 +13,12 @@
 
   @include vp-1199 {
     padding-top: 102px;
-    padding-bottom: 55px;
+    // padding-bottom: 60px;
   }
 
   @include vp-767 {
     padding-top: 71px;
-    padding-bottom: 70px;
+    // padding-bottom: 50px;
   }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .campaign__item:first-of-type span {
-  display: block;
+  // display: block;
   font-weight: 700;
   font-size: 70px;
   line-height: 94%;
@@ -151,6 +151,7 @@
 .campaign__item:first-of-type a {
   font-size: 14px;
   line-height: 16px;
+  color: $color-default-white;
   border-color: $color-default-white;
 
   @include vp-767 {
@@ -207,6 +208,7 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: $color-resolution-blue;
   border-bottom: 1px solid $color-resolution-blue;
 
   @include vp-767 {
@@ -216,10 +218,10 @@
 
 .campaign__item:nth-of-type(2) p {
   @include vp-1199 {
-    max-width: 225px;
+    padding-right: 30px;
   }
 
   @include vp-767 {
-    max-width: unset;
+    padding-right: 0;
   }
 }
