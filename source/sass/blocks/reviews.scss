@@ -80,12 +80,14 @@
 .reviews__img-wrapper {
   grid-row: 1 / span 2;
   margin: 62px 0 20px 62px;
+  border-radius: 50%;
 
   @include vp-767 {
     grid-row: unset;
     margin: 41px 0 0 41px;
   }
 }
+
 .reviews__img-wrapper img {
   width: 100%;
 }

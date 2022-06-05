@@ -38,33 +38,33 @@
 .promo__picture {
   width: 660px;
   background-color: $color-sapphire;
-  background-image: url("../img/competitions-desktop.jpg");
+  background-image: url("../img/competitions-desktop.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 
   @include retina {
     @media (min-width: $vp-desktop-only) {
-      background-image: url("../img/competitions-desktop@2x.jpg");
+      background-image: url("../img/competitions-desktop@2x.webp");
     }
   }
 
   @include vp-1199 {
     width: 386px;
-    background-image: url("../img/competitions-tablet.jpg");
+    background-image: url("../img/competitions-tablet.webp");
 
     @include retina {
-      background-image: url("../img/competitions-tablet@2x.jpg");
+      background-image: url("../img/competitions-tablet@2x.webp");
     }
   }
 
   @include vp-767 {
     width: 290px;
     height: 292px;
-    background-image: url("../img/competitions-mobile.jpg");
+    background-image: url("../img/competitions-mobile.webp");
 
     @include retina {
-      background-image: url("../img/competitions-mobile@2x.jpg");
+      background-image: url("../img/competitions-mobile@2x.webp");
     }
   }
 }

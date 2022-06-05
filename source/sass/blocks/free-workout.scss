@@ -1,0 +1,143 @@
+.free-workout {
+  flex-basis: 50%;
+  min-height: 337px;
+  padding: 71px 0 59px;
+  background-color: $color-sapphire;
+
+  @include vp-1199 {
+    flex-basis: auto;
+    min-height: 324px;
+  }
+
+  @include vp-767 {
+    min-height: 386px;
+    padding: 71px 12px 58px;
+  }
+}
+
+.free-workout h3 {
+  max-width: 410px;
+  margin: 0 170px 36px auto;
+  font-family: $ff-bebas;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    margin-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px + 67px);
+  }
+
+  @include vp-1199 {
+    max-width: 502px;
+    margin: 0 auto 31px;
+    padding-right: 30px;
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 32px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 32px;
+  }
+}
+
+.free-workout form {
+  max-width: 416px;
+  margin: 0 167px 0 auto;
+
+  @include vp-1365 {
+    margin-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px + 64px);
+  }
+
+  @include vp-1199 {
+    max-width: 508px;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    // max-width: none;
+    padding-right: 0;
+  }
+}
+
+.free-workout fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+  padding: 0;
+  border: none;
+
+  @include vp-1199 {
+    gap: 12%;
+  }
+
+  @include vp-767 {
+    gap: 0%;
+  }
+}
+
+.free-workout__user-name,
+.free-workout__tel {
+  flex: 1 1 47%;
+
+  @include vp-1199 {
+    flex-basis: 44%;
+  }
+
+  @include vp-767 {
+    flex-basis: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.free-workout input[type="text"],
+.free-workout input[type="tel"],
+.free-workout input[type="email"],
+.free-workout textarea {
+  width: 100%;
+  min-height: 24px;
+  margin-bottom: 18px;
+  padding: 5px 0 5px;
+
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid $color-light-slate-grey;
+
+  &::placeholder {
+    color: transparentize($color: $color-default-white, $amount: 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparentize($color-default-white, 0.8);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.free-workout__button {
+  flex-basis: 100%;
+}
+
+.free-workout__button button {
+  width: 100%;
+  min-height: 55px;
+  font-size: 14px;
+  line-height: 16px;
+  border-width: 3px;
+}
