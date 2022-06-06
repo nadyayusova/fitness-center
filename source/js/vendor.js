@@ -7,7 +7,6 @@ const trainersSwiper = new Swiper('.trainers__swiper', {
     prevEl: '.trainers__swiper-prev-btn',
   },
   loop: true,
-  // watchOverflow: true,
   breakpoints: {
     320: {
       slidesPerView: 1,

@@ -116,9 +116,6 @@
 }
 
 .page-title__text p {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end;
   margin: 0;
 
   font-family: $ff-bebas;
@@ -135,7 +132,6 @@
   }
 
   @include vp-767 {
-    //только для текста слева
     max-width: 290px;
     font-size: 28px;
   }
@@ -165,9 +161,6 @@
   }
 
   @include vp-767 {
-    // grid-template-columns: 1fr 176px;
-    //только для текста слева
-    // max-width: 290px;
     grid-template-columns: 113px 177px 1fr;
     grid-template-rows: 86px min-content 1fr;
   }
@@ -177,17 +170,12 @@
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 
-  //только для текста слева
   @include vp-767 {
     justify-self: end;
-    // margin-left: 77px;
   }
 }
 
 .page-title__text h2 {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: flex-end;
   margin: 0;
 
   font-family: $ff-bebas;
@@ -254,9 +242,6 @@
   justify-self: end;
   align-self: start;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   min-width: 233px;
   min-height: 61px;
   padding: 15px 20px 12px;
@@ -288,7 +273,6 @@
   width: 500px;
   margin: 0;
   margin-top: -16px;
-
   object-fit: cover;
 
   @include vp-1199 {

@@ -17,23 +17,16 @@
 
   transition: opacity $trans-default;
 
-  // &--solid-1 {
-  //   background-color: $color-deep-sky-blue;
-  //   border-color: $color-deep-sky-blue;
-  //   outline-color: $color-default-white;
-  // }
-
   &--transparent-1 {
     background-color: $color-transparent;
     border-color: $color-default-white;
-    outline-color: $color-default-white;
+    outline-color: $color-gamboge;
   }
 
   &--transparent-2 {
     color: $color-sapphire;
     background-color: $color-transparent;
     border-color: $color-resolution-blue;
-    // outline-color: $color-resolution-blue;
   }
 
   &:disabled {

@@ -10,7 +10,6 @@
   margin-bottom: 38px;
   padding: 0;
   list-style-type: none;
-  // border-bottom: 2px solid transparentize($color: $color-grey, $amount: 0.8);
 
   @include vp-1199 {
     margin-bottom: 44px;
@@ -24,15 +23,13 @@
 .tab-headers li {
   position: relative;
   padding: 0 24px 10px;
-  // margin-left: 24px;
-  // margin-right: 24px;
-  // padding-bottom: 10px;
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: transparentize($color: $color-sapphire, $amount: 0.5);
   border-bottom: 2px solid transparentize($color: $color-grey, $amount: 0.8);
+  user-select: none;
 
   &:hover {
     color: $color-sapphire;

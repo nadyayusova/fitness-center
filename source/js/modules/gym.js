@@ -1,12 +1,29 @@
 const playVideoBtn = document.querySelector('.gym__button');
 const coverBlock = document.querySelector('.gym__cover');
 const videoBlock = document.querySelector('.gym__video');
+const tag = document.createElement('script');
+const firstScriptTag = document.getElementsByTagName('script')[0];
+
 
 function getVideoId() {
   const video = videoBlock.querySelector('iframe');
   const start = video.src.lastIndexOf('/') + 1;
   const end = video.src.indexOf('?');
   return (video.src.substring(start, end));
+}
+
+function onYouTubeIframeAPIReady() {
+  const player = new YT.Player('player', {
+    videoId: getVideoId(),
+    events: {
+      'onReady': onPlayerReady,
+    },
+  });
+  return player;
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
 }
 
 const onPlayButtonClick = function () {
@@ -17,24 +34,8 @@ const onPlayButtonClick = function () {
   if (videoBlock.classList.contains('hidden')) {
     videoBlock.classList.remove('hidden');
 
-    let tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    let firstScriptTag = document.getElementsByTagName('script')[0];
+    tag.src = 'https://www.youtube.com/iframe_api';
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    let player;
-
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: getVideoId(),
-        events: {
-          'onReady': onPlayerReady,
-        }
-      });
-    }
-
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
 
     window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
     window.onPlayerReady = onPlayerReady;

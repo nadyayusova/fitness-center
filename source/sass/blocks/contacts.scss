@@ -49,7 +49,6 @@
 
   @include vp-1199 {
     column-gap: 8%;
-    // max-width: 502px;
     max-width: 580px;
     margin: 0 auto;
   }
@@ -57,7 +56,6 @@
   @include vp-767 {
     columns: 1;
     column-gap: 0;
-    // max-width: none;
     max-width: 502px;
   }
 
@@ -69,6 +67,10 @@
     left: 50%;
     width: 1px;
     background-color: $color-light-slate-grey;
+
+    @include vp-1199 {
+      left: calc(50% + 15px);
+    }
 
     @include vp-767 {
       display: none;
@@ -90,16 +92,22 @@
   }
 }
 
-.contacts h4,
 .contacts p,
 .contacts a {
   margin: 0;
   font-family: $ff-roboto;
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
 }
 
-.contacts h4 {
+.contacts p:first-of-type {
   margin-bottom: 3px;
   font-weight: 700;
   font-size: 16px;
@@ -108,18 +116,6 @@
   @include vp-1199 {
     margin-bottom: 6px;
     font-size: 20px;
-  }
-}
-
-.contacts p,
-.contacts a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-
-  @include vp-1199 {
-    font-size: 18px;
-    line-height: 152.34%;
   }
 }
 

@@ -5,7 +5,6 @@ tabsLabels.forEach(function (tab, i) {
   tab.addEventListener('click', function (evt) {
     evt.preventDefault();
     hideTabs();
-    // console.log(evt.target);
     evt.target.classList.add('is-active');
     tabsContent[i].classList.add('is-active');
   });
