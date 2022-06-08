@@ -9,6 +9,11 @@
   margin: 0 auto;
   padding: 0 103px;
 
+  @include vp-1365 {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  }
+
   @include vp-1199 {
     padding: 0 45px;
   }

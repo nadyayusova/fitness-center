@@ -883,8 +883,10 @@ button,
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   border: 4px solid rgba(255, 255, 255, 0);
+  outline-color: #e59700;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1022,10 +1024,6 @@ button,
   overflow-wrap: break-word;
 }
 
-.page-title__text h2 > :not(:first-child) {
-  max-width: 70%;
-}
-
 .page-title__text h2:first-of-type {
   margin-top: 9px;
 }
@@ -1104,8 +1102,7 @@ button,
   text-transform: uppercase;
 }
 
-.page-title__socials a {
-  display: block;
+.page-title__socials li {
   margin-top: 10px;
   margin-bottom: 9px;
   text-align: right;
@@ -1246,11 +1243,11 @@ button,
 .subscriptions {
   position: relative;
   background-color: #ffffff;
-  background-image: url("../img/disks-desktop.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 150px, #f8f9fc 150px, #f8f9fc 100%);
-  background-image: url("../img/disks-desktop.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 150px, #f8f9fc 150px, #f8f9fc 100%);
-  background-position: calc(50% + 629px) bottom, center bottom;
+  background-image: url("../img/disks-desktop.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 68px, #f8f9fc 68px, #f8f9fc 100%);
+  background-image: url("../img/disks-desktop.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 68px, #f8f9fc 68px, #f8f9fc 100%);
+  background-position: calc(50% + 631px) bottom, center bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: 465px 494px, auto;
+  background-size: 380px 330px, auto;
   z-index: 2;
 }
 
@@ -1263,7 +1260,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 121px;
-  padding-bottom: calc(80px + 150px);
+  padding-bottom: calc(80px + 68px);
 }
 
 .subscriptions__inner h2 {
@@ -1339,11 +1336,11 @@ button,
   background-color: #d10a42;
 }
 
-li:first-child a.is-active::after {
+.tab-headers li:first-child a.is-active::after {
   left: 0;
 }
 
-li:last-child a.is-active::after {
+.tab-headers li:last-child a.is-active::after {
   right: 0;
 }
 
@@ -1495,7 +1492,7 @@ li:last-child a.is-active::after {
 
 .promo {
   position: relative;
-  margin-top: -30px;
+  margin-top: 51px;
   margin-bottom: 80px;
   background-color: #ffffff;
   z-index: 3;
@@ -1513,7 +1510,7 @@ li:last-child a.is-active::after {
 
 .promo__picture {
   width: 660px;
-  background-color: #102654;
+  background-color: #071846;
   background-image: url("../img/competitions-desktop.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1737,8 +1734,8 @@ li:last-child a.is-active::after {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  max-width: 300px;
+  margin: 25px auto 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -1747,9 +1744,7 @@ li:last-child a.is-active::after {
 }
 
 .trainers__img-wrapper:hover ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .trainers__overlay li {
@@ -1992,7 +1987,9 @@ li:last-child a.is-active::after {
 }
 
 .campaign__item div:first-of-type img {
-  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .campaign__item div:last-of-type {
@@ -2063,6 +2060,7 @@ li:last-child a.is-active::after {
 
 .campaign__item p {
   margin: 0;
+  margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2205,6 +2203,14 @@ li:last-child a.is-active::after {
   stroke: #000000;
 }
 
+.reviews__inner .swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.reviews__inner .swiper-button-disabled svg {
+  stroke: #afafaf;
+}
+
 .feedback {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2341,7 +2347,7 @@ li:last-child a.is-active::after {
 .contacts {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  padding: 72px 0 20px;
+  padding: 72px 0 35px;
   background-color: #ffffff;
 }
 
@@ -2495,8 +2501,8 @@ li:last-child a.is-active::after {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1199px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1199px), (min-resolution: 144dpi) and (min-width: 1199px), (min-resolution: 1.5dppx) and (min-width: 1199px) {
   .subscriptions {
-    background-image: url("../img/disks-desktop@2x.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 150px, #f8f9fc 150px, #f8f9fc 100%);
-    background-image: url("../img/disks-desktop@2x.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 150px, #f8f9fc 150px, #f8f9fc 100%);
+    background-image: url("../img/disks-desktop@2x.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 68px, #f8f9fc 68px, #f8f9fc 100%);
+    background-image: url("../img/disks-desktop@2x.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 68px, #f8f9fc 68px, #f8f9fc 100%);
   }
 
   .promo__picture {
@@ -2523,6 +2529,7 @@ li:last-child a.is-active::after {
   .advantages__item:nth-child(4) dt:first-of-type,
   .advantages__item:nth-child(n+6):nth-child(3n) dt:first-of-type {
     margin-left: 27px;
+    min-width: 107px;
   }
 
   .advantages__item:nth-child(1) dd,
@@ -2532,12 +2539,7 @@ li:last-child a.is-active::after {
 }
 
 @media (max-width: 1365px) {
-  .page-title__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
-  .gym__inner {
+  .container {
     padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
     padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
   }
@@ -2546,28 +2548,17 @@ li:last-child a.is-active::after {
     background-position: calc(50% + calc((100vw - 1200px) / (1365 - 1200) * (629 - 600) + 600px)) bottom, center bottom;
   }
 
-  .subscriptions__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
   .rates-list {
     gap: 0 calc((100vw - 1200px) / (1365 - 1200) * (39 - 14) + 14px);
   }
 
-  .advantages__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  .trainers__overlay {
+    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (30 - 10) + 10px);
+    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (30 - 10) + 10px);
   }
 
-  .campaign__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
-  .reviews__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
+  .trainers__overlay ul {
+    margin-top: calc((100vw - 1200px) / (1365 - 1200) * (25 - 10) + 10px);
   }
 
   .free-workout h3 {
@@ -2576,11 +2567,6 @@ li:last-child a.is-active::after {
 
   .free-workout form {
     margin-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px + 64px);
-  }
-
-  .page-footer__inner {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
   }
 }
 
@@ -2742,10 +2728,10 @@ li:last-child a.is-active::after {
   }
 
   .subscriptions {
-    background-position: calc(50% + 249px) 105.1%, center bottom;
-    background-image: url("../img/disks-tablet.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 54px, #f8f9fc 54px, #f8f9fc 100%);
-    background-image: url("../img/disks-tablet.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 54px, #f8f9fc 54px, #f8f9fc 100%);
-    background-size: 423px 444px, auto;
+    background-position: calc(50% + 249px) bottom, center bottom;
+    background-image: url("../img/disks-tablet.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 52px, #f8f9fc 52px, #f8f9fc 100%);
+    background-image: url("../img/disks-tablet.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 52px, #f8f9fc 52px, #f8f9fc 100%);
+    background-size: 342px 297px, auto;
   }
 
   .subscriptions__inner {
@@ -2753,7 +2739,7 @@ li:last-child a.is-active::after {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: calc(60px + 54px);
+    padding-bottom: calc(60px + 52px);
   }
 
   .subscriptions__inner h2 {
@@ -2793,7 +2779,7 @@ li:last-child a.is-active::after {
   }
 
   .promo {
-    margin-top: 46px;
+    margin-top: 48px;
   }
 
   .promo__inner {
@@ -2864,6 +2850,14 @@ li:last-child a.is-active::after {
     margin-bottom: 4px;
     font-size: 42px;
     text-align: center;
+  }
+
+  .trainers__overlay {
+    padding: 53px 30px 15px;
+  }
+
+  .trainers__overlay ul {
+    margin-top: 18px;
   }
 
   .trainers__swiper-prev-btn,
@@ -2962,6 +2956,10 @@ li:last-child a.is-active::after {
 
   .campaign__item div:first-of-type {
     width: 399px;
+  }
+
+  .campaign__item div:first-of-type img {
+    width: 100%;
   }
 
   .campaign__item:nth-of-type(2) p {
@@ -3095,8 +3093,8 @@ li:last-child a.is-active::after {
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .subscriptions {
-    background-image: url("../img/disks-tablet@2x.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 54px, #f8f9fc 54px, #f8f9fc 100%);
-    background-image: url("../img/disks-tablet@2x.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 54px, #f8f9fc 54px, #f8f9fc 100%);
+    background-image: url("../img/disks-tablet@2x.png"), -o-linear-gradient(bottom, #ffffff 0%, #ffffff 52px, #f8f9fc 52px, #f8f9fc 100%);
+    background-image: url("../img/disks-tablet@2x.png"), linear-gradient(0deg, #ffffff 0%, #ffffff 52px, #f8f9fc 52px, #f8f9fc 100%);
   }
 
   .promo__picture {
@@ -3467,7 +3465,7 @@ li:last-child a.is-active::after {
   }
 
   .campaign__item:first-of-type a {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .campaign__item:not(:first-of-type) {
@@ -3499,7 +3497,7 @@ li:last-child a.is-active::after {
   }
 
   .reviews__swiper {
-    width: 306px;
+    width: 96%;
   }
 
   .reviews__inner h2 {
@@ -3507,15 +3505,20 @@ li:last-child a.is-active::after {
   }
 
   .reviews__slide {
+    -ms-grid-columns: 1.03fr 0.97fr;
+    grid-template-columns: 1.03fr 0.97fr;
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
     row-gap: 15px;
+    width: 100%;
     min-height: 335px;
   }
 
   .reviews__img-wrapper {
     grid-row: unset;
+    -ms-grid-column-align: end;
+    justify-self: end;
     margin: 41px 0 0 41px;
   }
 
@@ -3524,7 +3527,12 @@ li:last-child a.is-active::after {
   }
 
   .reviews__slide > p {
-    margin: 49px 10px 0 0;
+    -ms-grid-column-align: start;
+    justify-self: start;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 44px 10px 0 0;
     line-height: 131%;
   }
 
@@ -3535,7 +3543,7 @@ li:last-child a.is-active::after {
 
   .reviews__swiper-prev-btn,
   .reviews__swiper-next-btn {
-    top: calc(50% + 20px);
+    top: calc(50% + 39px);
   }
 
   .reviews__swiper-prev-btn {

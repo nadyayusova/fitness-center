@@ -1,12 +1,12 @@
 .promo {
   position: relative;
-  margin-top: -30px;
+  margin-top: 51px;
   margin-bottom: 80px;
   background-color: $color-default-white;
   z-index: 3;
 
   @include vp-1199 {
-    margin-top: 46px;
+    margin-top: 48px;
   }
 
   @include vp-767 {
@@ -36,7 +36,7 @@
 
 .promo__picture {
   width: 660px;
-  background-color: $color-sapphire;
+  background-color: $color-midnight-express;
   background-image: url("../img/competitions-desktop.webp");
   background-position: center center;
   background-repeat: no-repeat;

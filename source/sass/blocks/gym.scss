@@ -8,11 +8,6 @@
   padding-top: 120px;
   padding-bottom: 235px;
 
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
   @include vp-1199 {
     flex-direction: column;
     padding-top: 51px;

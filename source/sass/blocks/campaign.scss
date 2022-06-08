@@ -6,11 +6,6 @@
   padding-top: 122px;
   padding-bottom: 60px;
 
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
   @include vp-1199 {
     padding-top: 102px;
   }
@@ -108,7 +103,12 @@
 }
 
 .campaign__item div:first-of-type img {
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 }
 
 .campaign__item div:last-of-type {
@@ -152,7 +152,7 @@
   border-color: $color-default-white;
 
   @include vp-767 {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
@@ -184,6 +184,7 @@
 
 .campaign__item p {
   margin: 0;
+  margin-bottom: 15px;
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 16px;

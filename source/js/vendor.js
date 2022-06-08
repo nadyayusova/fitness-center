@@ -28,7 +28,6 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
     nextEl: '.reviews__swiper-next-btn',
     prevEl: '.reviews__swiper-prev-btn',
   },
-  loop: true,
   slidesPerView: 1,
   spaceBetween: 80,
 });

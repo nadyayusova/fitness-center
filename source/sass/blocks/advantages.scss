@@ -6,11 +6,6 @@
   padding-top: 126px;
   padding-bottom: 58px;
 
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
   @include vp-1199 {
     padding-top: 101px;
     padding-bottom: 55px;
@@ -102,6 +97,7 @@
 .advantages__item:nth-child(n+6):nth-child(3n) dt:first-of-type {
   @include desktop-only {
     margin-left: 27px;
+    min-width: 107px;
   }
 }
 

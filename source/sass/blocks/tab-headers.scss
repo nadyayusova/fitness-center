@@ -78,10 +78,10 @@
   }
 }
 
-li:first-child a.is-active::after {
+.tab-headers li:first-child a.is-active::after {
   left: 0;
 }
 
-li:last-child a.is-active::after {
+.tab-headers li:last-child a.is-active::after {
   right: 0;
 }

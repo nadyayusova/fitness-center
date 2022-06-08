@@ -1,14 +1,11 @@
-$gradient-desktop: 150px;
-$gradient-tablet: 54px;
-
 .subscriptions {
   position: relative;
   background-color: $color-default-white;
   background-image: url("../img/disks-desktop.png"),
     linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-desktop, $color-ghost-white $gradient-desktop, $color-ghost-white 100%);
-  background-position: calc(50% + 629px) bottom, center bottom;
+  background-position: calc(50% + 631px) bottom, center bottom;
   background-repeat: no-repeat, no-repeat;
-  background-size: 465px 494px, auto;
+  background-size: 380px 330px, auto;
   z-index: 2;
 
   @include retina {
@@ -23,10 +20,10 @@ $gradient-tablet: 54px;
   }
 
   @include vp-1199 {
-    background-position: calc(50% + 249px) 105.1%, center bottom;
+    background-position: calc(50% + 249px) bottom, center bottom;
     background-image: url("../img/disks-tablet.png"),
       linear-gradient(0deg, $color-default-white 0%, $color-default-white $gradient-tablet, $color-ghost-white $gradient-tablet, $color-ghost-white 100%);
-    background-size: 423px 444px, auto;
+    background-size: 342px 297px, auto;
 
     @include retina {
       background-image: url("../img/disks-tablet@2x.png"),
@@ -48,17 +45,12 @@ $gradient-tablet: 54px;
   display: flex;
   flex-direction: column;
   padding-top: 121px;
-  padding-bottom: calc(80px + 150px);
-
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
+  padding-bottom: calc(80px + 68px);
 
   @include vp-1199 {
     padding-top: 101px;
     align-items: center;
-    padding-bottom: calc(60px + 54px);
+    padding-bottom: calc(60px + 52px);
   }
 
   @include vp-767 {

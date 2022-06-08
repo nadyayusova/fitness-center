@@ -7,11 +7,6 @@
   padding-top: 61px;
   padding-bottom: 79px;
 
-  @include vp-1365 {
-    padding-left: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-    padding-right: calc((100vw - 1200px) / (1365 - 1200) * (103 - 45) + 45px);
-  }
-
   @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 60px;
@@ -27,7 +22,7 @@
   padding: 40px;
 
   @include vp-767 {
-    width: 306px;
+    width: 96%;
   }
 }
 
@@ -70,8 +65,10 @@
   box-shadow: 0 0 40px transparentize($color: $color-resolution-blue, $amount: 0.8);
 
   @include vp-767 {
+    grid-template-columns: 1.03fr 0.97fr;
     column-gap: 15px;
     row-gap: 15px;
+    width: 100%;
     min-height: 335px;
   }
 }
@@ -83,6 +80,7 @@
 
   @include vp-767 {
     grid-row: unset;
+    justify-self: end;
     margin: 41px 0 0 41px;
   }
 }
@@ -111,7 +109,9 @@
   line-height: 100%;
 
   @include vp-767 {
-    margin: 49px 10px 0 0;
+    justify-self: start;
+    align-self: center;
+    margin: 44px 10px 0 0;
     line-height: 131%;
   }
 }
@@ -140,7 +140,7 @@
   }
 
   @include vp-767 {
-    top: calc(50% + 20px);
+    top: calc(50% + 39px);
   }
 }
 
@@ -178,4 +178,12 @@
   &:active {
     stroke: $color-default-black;
   }
+}
+
+.reviews__inner .swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.reviews__inner .swiper-button-disabled svg {
+  stroke: $color-grey-light;
 }
