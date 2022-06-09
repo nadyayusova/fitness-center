@@ -1777,6 +1777,11 @@ button,
   z-index: 5;
 }
 
+.trainers__swiper-prev-btn:focus,
+.trainers__swiper-next-btn:focus {
+  outline-color: #e59700;
+}
+
 .trainers__swiper-prev-btn {
   left: 44px;
 }
@@ -2214,6 +2219,11 @@ button,
   border: none;
   background-color: transparent;
   z-index: 5;
+}
+
+.reviews__swiper-prev-btn:focus,
+.reviews__swiper-next-btn:focus {
+  outline-color: #e59700;
 }
 
 .reviews__swiper-prev-btn {

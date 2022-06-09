@@ -191,6 +191,10 @@
   @include vp-767 {
     top: calc(50% + 5px);
   }
+
+  &:focus {
+    outline-color: $color-gamboge;
+  }
 }
 
 .trainers__swiper-prev-btn {

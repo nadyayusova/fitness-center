@@ -142,6 +142,10 @@
   @include vp-767 {
     top: calc(50% + 39px);
   }
+
+  &:focus {
+    outline-color: $color-gamboge;
+  }
 }
 
 .reviews__swiper-prev-btn {
